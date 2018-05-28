@@ -25,8 +25,6 @@ public class MainActivity extends AppCompatActivity {
 
         int tag = Integer.parseInt(view.getTag().toString());
 
-        Toast.makeText(this, Integer.toString(tag), Toast.LENGTH_SHORT).show();
-
         mediaPlayer = MediaPlayer.create(this, sounds[tag]);
         mediaPlayer.start();
 
